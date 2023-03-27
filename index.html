@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <script type="text/javascript" src="./js/validar.js"></script>
+</head>
+<body>
+    <header>
+        <h2>titulo</h2>
+    </header>
+        <p>Por favor suscribase a nuestro boletín de ofertas personalizadas para usted,
+            según su provincia o distrito.
+        </p>
+        <form action="" method="post" id="suscripcion">
+			<div class="form">
+            <label for="nombre">Nombre</label>
+			<input type="text" id="nombre" name="nbre" size="50" placeholder="Escriba aqu&iacute; su nombre..">
+
+			<label for="apellido">Apellido</label>
+			<input type="text" id="apellido" name="ap" size="50" placeholder="Escriba aqu&iacute; su apellido..">
+			<label for="email">E-mail</label>
+			<input type="text" id="email" name="mail" size="50" placeholder="Escriba aqu&iacute; su dirección de correo electr&oacute;nico..">
+            <label for="distrito">Seleccione su provincia/distrito</label>
+            <select id="distrito" name="dist">
+                <option value="bs">Ciudad Aut&oacute;noma de Buenos Aires</option>
+                <option value="buenosaires">Buenos Aires (Provincia)</option>
+                <option value="catamarca">Catamarca</option>
+                <option value="chaco">Chaco</option>
+            </select>
+			<input type="reset" value="Limpiar">
+			<input type="submit" onclick="Validar();" value="Enviar"> 
+            <!--<button type="submit">Enviar</button>-->
+            </div>
+		</form>
+
+    <footer><p>Copyright</p></footer>
+</body>
+</html>
